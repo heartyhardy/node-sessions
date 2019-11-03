@@ -4,7 +4,7 @@ const session = require('express-session');
 
 const root_route =require('./routes/root');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 5000;
 const app  = express();
 
 app.use(bparser.json({extended: false}));
